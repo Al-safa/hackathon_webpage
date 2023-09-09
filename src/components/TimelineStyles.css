@@ -1,0 +1,121 @@
+html,body{
+  margin: 0;
+  padding: 0;
+}
+.timeline-section{
+  background-color: #2F2563;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  position: relative;
+  border-radius: 20px 20px 0px 0px;
+  margin-top: 100px;
+  }
+
+.timeline-section h1{
+  color: #fff;
+  font-size: 50px;
+  text-align: center;
+}
+
+.timeline{
+  margin: 30px 30px 30px 30px;
+  position: relative;
+  max-width: 1200px;
+}
+
+.container{
+  padding: 10px 0px;
+  position: relative;
+  width: 50%;
+}
+
+.text-box > h3{
+  color: black;
+  margin-top: -20px;
+}
+
+.text-box > p{
+  color: black;
+}
+
+.text-box{
+  margin: 0px 50px;
+  padding: 1px 20px;
+  background: #fff;
+  position: relative;
+  border-radius: 6px;
+  font-size: 15px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.5);
+}
+.left-container{
+  left: 0;
+}
+.right-container{
+  left: 50%;
+}
+.container img{
+  padding: 10px;
+  background-color: #fff;
+  position: absolute;
+  width: 35px;
+  border-radius: 50%;
+  right: -25px;
+  top: 32px;
+  z-index: 2;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.5);
+}
+.right-container img{
+  left: -30px;
+}
+
+.timeline::after{
+  content: '';
+  position: absolute;
+  width: 6px;
+  height: 100%;
+  background: #fff;
+  top: 0;
+  left: 50%;
+  margin-left: -3px;
+  z-index: 0;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.5);
+}
+
+.text-box h2{
+  font-weight: 600px;
+  color: black;
+}
+.text-box small{
+  display: inline-block;
+}
+.round-details{
+  color: black;
+}
+@media  screen and (max-width : 780px){
+  .timeline{
+    margin: 50px 0px;
+  }
+  .timeline::after{
+    left: 40px;
+  }
+  .container{
+    width: calc(100% - 80px);
+    padding-left: 80px;
+    padding-right: 0px;
+  }
+  .text-box{
+    padding-right: 0px;
+    font-size: 13px;
+  }
+  .text-box small{
+    margin-bottom: 10px;
+  }
+  .right-container{
+    left: 0;
+  }
+  .left-container img, .right-container img{
+    left: 10px
+  }
+}
