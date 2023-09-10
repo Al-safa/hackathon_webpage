@@ -20,7 +20,7 @@ const Timeline = () => {
         return <div>Loading...</div>;
     }
   return(
-    <div className='timeline-section'>
+    <div className='timeline-section' id="timeline">
       <h1>Timeline</h1>
       <div className='timeline'>
         <div className="container left-container">
@@ -48,7 +48,7 @@ const Timeline = () => {
           <div className="text-box" data-aos="zoom-in">
             <h2>Opening Ceremony</h2>
             <h3>{eventData.start_date}</h3>
-            <p>The hackathon begins! This is where you will unleash your creativiy as well as your coding prowess and it will be a journey of innovation, collobration and problem-solving.</p>
+            <p>The hackathon begins! This is where you will unleash your creativity as well as your coding prowess and it will be a journey of innovation, collobration and problem-solving.</p>
             <span class="right-container-arrow"></span>
           </div>
         </div>

@@ -119,3 +119,24 @@ html,body{
     left: 10px
   }
 }
+@media  screen and (max-width : 500px){
+  .container{
+    width: calc(100% - 80px);
+    padding-left: 80px;
+    padding-right: 0px;
+  }
+  .text-box{
+    padding-right: 5px;
+    font-size: 13px;
+    margin-left: -3px;
+  }
+  .text-box small{
+    margin-bottom: 10px;
+  }
+  .right-container{
+    left: 0;
+  }
+  .left-container img, .right-container img{
+    left: 10px
+  }
+}

@@ -12,7 +12,8 @@ video{
   display:flex;
   align-items:center;
   justify-content: center;
-  height: 280vh;
+  height: 100%;
+  margin: 30px 0px 30px 0px;
 }
  
   .register > form{
@@ -56,6 +57,22 @@ video{
     .register > form{
       margin-top: 30px;
       margin-bottom: 30px;
+    }
+    form > h1{
+      font-size: 45px;
+    }
+    
+  }
+
+  @media screen and (max-width: 500px)
+  {
+    .register{
+      height: 100%;
+      overflow-x: hidden;
+    }
+    .register > form{
+      background: transparent;
+      box-shadow: none;
     }
     form > h1{
       font-size: 45px;

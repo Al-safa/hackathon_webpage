@@ -18,7 +18,7 @@ function Hero () {
     }
 
     return(
-        <div className="hero-container">
+        <div className="hero-container" id="home">
             <video src="/videos/video2.mp4" autoPlay loop muted/>
             <h1>{eventData.name}</h1>
              <p>Transform your ideas into reality by grabbing this chance now!</p>

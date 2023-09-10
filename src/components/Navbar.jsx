@@ -2,6 +2,7 @@ import{useRef} from "react";
 import React, { useState, useEffect } from 'react';
 import{FaBars,FaTimes} from "react-icons/fa";
 import "./NavbarStyles.css";
+import AnchorLink from "react-anchor-link-smooth-scroll";
 
 
 function Navbar(){
@@ -28,9 +29,9 @@ function Navbar(){
         <header>
             <h3>{eventData.name}</h3>
             <nav ref = {navRef}>
-                <a href="/#">Home</a>
-                <a href="/#">About Us</a>
-                <a href="/#">Timeline</a>
+                <AnchorLink href="#home">Home</AnchorLink>
+                <AnchorLink href="#aboutus" smooth>About Us</AnchorLink>
+                <AnchorLink href="#timeline">Timeline</AnchorLink>
                 <a href="/#">Login</a>
                 <button className="nav-btn nav-close-btn" onClick={showNavbar}>
                     <FaTimes/>
